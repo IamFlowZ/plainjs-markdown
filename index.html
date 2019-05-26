@@ -11,15 +11,23 @@
         <h4 style="text-align: center;"><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Best Markdown-Cheatsheet</a></h3>
         <div id="container">
             <div id="edit">
-                <h2 id="editHead" class="submitBtn">Edit:</h2>
+                <div id="editHead">
+                    <h2 style="text-decoration: underline; margin: 0; padding-top: 20px;">Edit:</h2>
+                    <button type="submit" id="loadBtn" class="submitBtn">Load</button>
+                    <button type="submit" id="bucketBtn" class="submitBtn">Bucket</button>
+                    <!-- <button type="submit" id="localBtn" class="submitBtn">Local</button> -->
+                </div>
                 <textarea name="input" id="markdownInput" style="visibility: visible"></textarea>
-                <button type="submit" id="loadBtn" class="submitBtn">Load</button>
-                <button type="submit" id="bucketBtn" class="submitBtn">Bucket</button>
-                <button type="submit" id="localBtn" class="submitBtn">Local</button>
             </div>
             <div id="preview">
                 <h2 id="previewHead" class="submitBtn">Preview:</h2>
-                <div id="markdownOutput"></div>
+                <div id="markdownOutput" style="padding-left: 10px;"></div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some sample stuff</p>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
