@@ -1,0 +1,69 @@
+body {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+textarea {
+    resize: none;
+}
+
+#header {
+    text-align: center;
+}
+
+#edit {
+    position: absolute;
+    width: 45%;
+    height: 85%;
+}
+
+#preview {
+    position: absolute;
+    left: 50%;
+    width: 45%;
+    height: 85%;
+}
+
+.submitBtn {
+    position: absolute;
+    top: 25px;
+}
+
+#loadBtn {
+    left: 250px;
+}
+
+#bucketBtn {
+    left: 360px;
+}
+
+#localBtn {
+    left: 305px;
+}
+
+#editHead {
+    text-decoration: underline;
+    margin: 0;
+}
+
+#previewHead {
+    text-decoration: underline;
+    margin: 0;
+}
+
+#markdownInput {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    top: 65px;
+    overflow: auto;
+}
+
+#markdownOutput {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    top: 65px;
+    overflow: auto;
+    border: 1px solid black;
+}

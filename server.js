@@ -20,6 +20,13 @@ const server = http.createServer((req, res) => {
       res.write(data)
       res.end()
     })
+  } else if(req.url === '/index.css') {
+    res.statusCode = 200
+    res.setHeader('Content-Type', 'text/plain')
+    fs.readFile('./index.css', null, (error, data) => {
+      res.write(data)
+      res.end()
+    })
   } else {
     res.statusCode = 404
     res.statusMessage = "resource not found"
